@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/constraintLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             tools:context=".activity.ChapterActivity$PlaceholderFragment">
+
+    <ListView
+        android:id="@+id/catalogList"
+        android:layout_width="match_parent"
+        android:layout_height="524dp"
+        android:background="@android:color/white"
+        android:scrollbars="vertical"
+        android:listSelector="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookHome" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="主页"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bookHome"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="书架"
+        app:layout_constraintLeft_toRightOf="@+id/home"
+        app:layout_constraintTop_creator="@id/textView" />
+
+    <Button
+        android:id="@+id/lastChapter"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="上一章"
+        app:layout_constraintLeft_toRightOf="@+id/bookHome"
+        app:layout_constraintTop_creator="@id/textView" />
+
+    <Button
+        android:id="@+id/catalog"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="目录"
+        app:layout_constraintLeft_toRightOf="@id/lastChapter"
+        app:layout_constraintTop_creator="@id/textView" />
+
+    <Button
+        android:id="@+id/nextChapter"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="下一章"
+        app:layout_constraintLeft_toRightOf="@id/catalog"
+        app:layout_constraintTop_creator="@id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="547dp"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookHome"
+        tools:text="章节内容" />
+
+
+</android.support.constraint.ConstraintLayout>

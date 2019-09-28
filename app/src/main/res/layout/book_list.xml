@@ -1,0 +1,12 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.BookListActivity$PlaceholderFragment">
+
+    <ListView
+        android:id="@+id/bookList"
+        android:layout_width="394dp"
+        android:layout_height="595dp" />
+</android.support.constraint.ConstraintLayout>
